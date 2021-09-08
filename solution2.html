@@ -16,7 +16,7 @@
         <canvas id="chart" style="width:100%;max-width:80%"></canvas>
         <//center>
         <script>
-            var file = 'IPhoneData.csv';
+            var file = 'IPhoneData1.csv';
             d3.csv(file).then(makeChart);
             function makeChart(days) {
                 var dayLabel = days.map(function(d){return d.Year});
