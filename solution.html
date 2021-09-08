@@ -7,7 +7,7 @@
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js"></script>
     </head>
     <body>
-        <canvas id="chart"></canvas>
+        <canvas id="chart" style="width:100%;max-width:80%"></canvas>
         <script>
             var file = 'TempData.csv';
             d3.csv(file).then(makeChart);
