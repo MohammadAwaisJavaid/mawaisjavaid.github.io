@@ -16,11 +16,11 @@
         <canvas id="chart" style="width:100%;max-width:80%"></canvas>
         <//center>
         <script>
-            var file = 'TempData.csv';
+            var file = 'IPhoneData.csv';
             d3.csv(file).then(makeChart);
             function makeChart(days) {
-                var dayLabel = days.map(function(d){return d.Day});
-                var dayTemp = days.map(function(d) {return d.Temperature});
+                var dayLabel = days.map(function(d){return d.Year});
+                var dayTemp = days.map(function(d) {return d.iPhone_Sales_in_Millions});
                 //Set Min for better visiable range
                 var minX = d3.min(dayTemp);
                 minX -= 10;
