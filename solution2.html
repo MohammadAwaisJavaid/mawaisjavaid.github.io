@@ -20,7 +20,7 @@
             d3.csv(file).then(makeChart);
             function makeChart(days) {
                 var dayLabel = days.map(function(d){return d.Year});
-                var dayTemp = days.map(function(d) {return d.iPhone_Sales_in_Billions});
+                var dayTemp = days.map(function(d) {return d.iPhone_Revenue_in_billion_USD});
                 //Set Min for better visiable range
                 var minX = d3.min(dayTemp);
                 minX -= 10;
